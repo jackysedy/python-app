@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: {{ .Values.pythonapp.name }}
-        image: python-app:latest
+        image: {{ .Values.pythonapp.name }}
         imagePullPolicy: Always
         ports:
         - containerPort: {{ .Values.pythonapp.port }}
