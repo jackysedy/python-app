@@ -19,7 +19,7 @@ spec:
       containers:
       - name: {{ .Values.pythonapp.name }}
         image: {{ .Values.pythonapp.name }}
-        imagePullPolicy: Always
+        imagePullPolicy: Never
         ports:
         - containerPort: {{ .Values.pythonapp.port }}
           name: {{ .Values.pythonapp.name }}
