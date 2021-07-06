@@ -1,3 +1,5 @@
+global:
+  registry: 063844947040.dkr.ecr.us-east-1.amazonaws.com/pythonapp
 pythonapp:
   name: python-app
   minReplicas: 1
