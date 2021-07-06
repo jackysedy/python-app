@@ -18,8 +18,8 @@ spec:
     spec:
       containers:
       - name: {{ .Values.pythonapp.name }}
-        image: {{ .Values.global.registry }}/pythonapp:pythonapp
-        imagePullPolicy: "IfNotPresent"
+        image: {{ .Values.global.registry }}/pythonapp:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: {{ .Values.pythonapp.port }}
           name: {{ .Values.pythonapp.name }}
